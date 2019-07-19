@@ -1,0 +1,186 @@
+.client-body blockquote,body,button,caption,dd,div,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,html,input,legend,li,menu,ol,p,pre,table,td,textarea,th,ul{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased}
+.client-body input:-webkit-autofill,select:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px #fff inset!important}
+.client-body .close-popup,.weui-popup__overlay{cursor:pointer}
+.client-body input{outline-width:0;outline-style:none;outline-color:invert;outline-color:transparent;border:none;border-style:none;box-shadow:none;text-shadow:none;-webkit-appearance:none;-webkit-user-select:text}
+.client-body .body{-webkit-overflow-scrolling:touch;position:relative;z-index:1;overflow:hidden;width:100vw;height:100vh;background-color:#fff;color:#0e0e0e;font-size:4vw;font-family:tahoma,arial,"Hiragino Sans GB","Microsoft YaHei",sans-serif}
+.client-body .bg-black{background-color:#080808}
+.client-body .bg-dark{background-color:#161616}
+.client-body .bg-light{background-color:#f5f5f5}
+.client-body .bg-white{background-color:#fff}
+.client-body .font-white{color:#ebebeb}
+.client-body .font-gray{color:#b3b3b3}
+.client-body .font-dark{color:#5d6c75}
+.client-body .font-green{color:#81fbb8}
+.client-body .font-red{color:#ea5455}
+.client-body .gold{color:gold}
+.client-body .silver{color:silver}
+.client-body .bronze{color:peru}
+.client-body .red-D{color:#b22222}
+.client-body .black{color:#0e0e0e}
+.client-body .mix-yellow{background-image:linear-gradient(135deg,#fccf31 10%,#f55555 100%)}
+.client-body .mix-blue{background-image:linear-gradient(135deg,#6b73ff 10%,#000dff 100%)}
+.client-body .mix-red{background-image:linear-gradient(135deg,#ff9d6c 10%,#bb4e75 100%)}
+.client-body .mix-green{background-image:linear-gradient(135deg,#92ffc0 10%,#002661 100%)}
+.client-body .mix-pink{background-image:linear-gradient(135deg,#ffd3a5 10%,#fd6585 100%)}
+.client-body .mix-orange{background-image:linear-gradient(135deg,#fd6e6a 10%,#ffc600 100%)}
+.client-body .mix-purple{background-image:linear-gradient(135deg,#fd6585 10%,#0d25b9 100%)}
+.client-body .mix-gold{background:-webkit-linear-gradient(135deg,#dfa868 10%,#f0dab8 100%);background:-o-linear-gradient(135deg,#dfa868 10%,#f0dab8 100%);background:-moz-linear-gradient(135deg,#dfa868 10%,#f0dab8 100%);background-image:linear-gradient(135deg,#dfa868 10%,#f0dab8 100%)}
+.client-body .mix-bg{background:-webkit-linear-gradient(45deg,#ada996 1%,#f2f2f2 33%,#dbdbdb 66%,#eaeaea 100%);background:-o-linear-gradient(45deg,#ada996 1%,#f2f2f2 33%,#dbdbdb 66%,#eaeaea 100%);background:-moz-linear-gradient(45deg,#ada996 1%,#f2f2f2 33%,#dbdbdb 66%,#eaeaea 100%);background-image:linear-gradient(45deg,#ada996 1%,#f2f2f2 33%,#dbdbdb 66%,#eaeaea 100%)}
+.client-body .mix-black{background:-webkit-linear-gradient(45deg,#474b4b 10%,#1a1a1a 100%);background:-o-linear-gradient(45deg,#474b4b 10%,#1a1a1a 100%);background:-moz-linear-gradient(45deg,#474b4b 10%,#1a1a1a 100%);background-image:linear-gradient(45deg,#474b4b 10%,#1a1a1a 100%)}
+.client-body .mix-gray{background:-webkit-linear-gradient(45deg,#f8f8ff 10%,#e6e6fa 100%);background:-o-linear-gradient(45deg,#f8f8ff 10%,#e6e6fa 100%);background:-moz-linear-gradient(45deg,#f8f8ff 10%,#e6e6fa 100%);background-image:linear-gradient(45deg,#f8f8ff 10%,#e6e6fa 100%)}
+.client-body .on{color:#fff}
+.client-body .center{text-align:center!important;text-indent:0!important}
+.client-body .centerlize{margin:auto;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+.client-body .radius{-webkit-border-radius:14px;-moz-border-radius:14px;border-radius:14px;-ms-border-radius:14px;-o-border-radius:14px}
+.client-body .shadow{box-shadow:0 1vw 10vw -4vw rgba(0,0,0,.2)}
+.client-body .circle{-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%}
+.client-body .none{display:none}
+.client-body .hide{visibility:hidden}
+.client-body .swiper-container{position:relative;float:left;width:100%;height:100%}
+.client-body @media (max-aspect-ratio:4/5){.pc-outer{position:relative;float:left;height:100%;width:100%;overflow:hidden}
+.client-body .pc-user{position:relative;float:left;height:100%;width:100%;overflow:hidden}
+.client-body .pc-warnning{display:none}
+.client-body }
+.client-body @media (min-aspect-ratio:4/5){.pc-outer{width:95vh;height:75vh;overflow:hidden}
+.client-body .pc-user{position:relative;float:left;height:100%;width:34.61vh;overflow:hidden;box-sizing:border-box;border:1px solid #000}
+.client-body .pc-warnning{position:relative;float:left;width:60.39vh;height:100%;overflow:hidden;text-align:center}
+.client-body .pc-warnning img{height:20vh;width:20vh;margin-bottom:5vh;margin-top:20vh}
+.client-body .pc-warnning-text{font-size:2vh;line-height:2.5vh;font-weight:900}
+.client-body }
+.client-body .login-page{position:relative;float:left;width:100%;height:100%;overflow:hidden}
+.client-body .login-bg-area{position:absolute;width:120vw;height:242vw;overflow:hidden;z-index:1;background-color:rgba(255,255,255,1)}
+.client-body .login-bg-area img{position:absolute;width:120vw;height:242vw;overflow:hidden;left:0;top:0;border:0 solid rgba(255,255,255,0);color:#fff}
+.client-body .login-content{position:absolute;width:100%;height:100%;overflow:hidden;background-color:rgba(255,255,255,.8);left:0;top:0;z-index:2}
+.client-body .login-content-inner{width:100%;height:auto}
+.client-body .login-logo{position:relative;float:left;width:100%;height:42.23vw;text-align:center;margin-bottom:6vw}
+.client-body .login-logo img{position:relative;height:42.23vw;width:60vw}
+.client-body .login-inputbar{position:relative;background-color:#fff;float:left;width:70vw;margin:0 15vw 4vw 15vw;height:13vw;box-sizing:border-box;border:1px solid #e6e6e6}
+.client-body .login-inputbar-icon{position:absolute;width:13vw;padding-left:3vw;text-align:center}
+.client-body .login-inputbar-icon i{position:relative;line-height:13vw;font-size:6vw!important;color:#b3b3b3!important}
+.client-body .login-inputbar-input{position:relative;width:100%;height:100%;padding-left:13vw;line-height:15vw;font-size:4vw;background-color:transparent}
+.client-body .login-inputbtn{position:relative;float:left;width:70vw;margin:0 15vw 4vw 15vw;height:13vw;cursor:pointer;box-sizing:border-box;text-align:center;line-height:13vw;font-size:4.5vw;font-weight:900}
+.client-body .login-description{text-align:center;position:relative;margin-top:5vw;float:left;width:100%;height:auto;font-size:4vw;line-height:6vw;color:#b3b3b3;transform:scale(.8)}
+.client-body .comeback-page{position:relative;float:left;width:100%;height:100%;overflow:hidden}
+.client-body .comeback-content{position:absolute;width:100%;height:100%;overflow:hidden;background-color:rgba(255,255,255,.95);left:0;top:0;z-index:2}
+.client-body .comeback-content-inner{width:100%;height:auto}
+.client-body .comeback-text{position:relative;float:left;text-align:center;width:100%;font-size:6vw;font-weight:900;margin-bottom:10vw}
+.client-body .usermain-page{position:relative;float:left;width:100%;height:100%;overflow:hidden}
+.client-body .usermain-content{position:absolute;width:100%;height:100%;overflow:hidden;padding-bottom:3vh;background-color:rgba(255,255,255,.95);left:0;top:0;z-index:2}
+.client-body .usermain-fun-entrence{position:relative;float:left;width:95%;height:calc(100% - 20vw);margin:10vw 2.5vw;box-shadow:0 1vw 10vw -2vw rgba(0,0,0,.2);padding:10vw}
+.client-body .swiper-container-usermain{position:relative;float:left;width:100%;height:100%;padding-left:1.8vw}
+.client-body .usermain-icon{position:relative;float:left;width:100%;text-align:left;margin-bottom:30vh}
+.client-body .usermain-icon i{position:relative;font-size:20vw;color:#fff}
+.client-body .usermain-title{position:relative;float:left;width:100%;font-size:10vw;font-weight:900;color:#fff}
+.client-body .usermain-subtitle{position:relative;float:left;width:100%;font-size:6vw;font-weight:900;color:#fff}
+.client-body .usermain-fun-entrence-bttom{position:absolute;left:0;bottom:0;width:100%;height:auto;padding:10vw}
+.client-body .msg-btn{position:fixed;right:5vw;top:5vw;border-radius:50%;box-shadow:0 1vw 10vw -2vw rgba(0,0,0,.4);height:15vw;width:15vw;z-index:3;cursor:pointer;text-align:center}
+.client-body .msg-btn .msg-new-number{position:absolute;right:0;top:0;border-radius:50%;height:10vw;width:10vw;line-height:10vw;font-weight:400;font-size:6vw;transform:scale(.5);transform-origin:100% 0;color:#fff;background-color:#dc143c}
+.client-body .msg-btn i{font-size:7vw;line-height:15vw;color:#b3b3b3}
+.client-body .backtoUsermain{position:relative;float:left;width:10vw;height:11vw;line-height:11vw;margin-left:-4vw;margin-right:4vw;text-align:center}
+.client-body .backtoUsermain i{font-size:13vw;color:#b3b3b3}
+.client-body .backtoUsermain-right{position:relative;float:left;width:calc(100% - 10vw);height:11vw}
+.client-body .id-choose-page{position:relative;float:left;width:100%;height:100%;overflow:hidden;padding:8vw}
+.client-body .id-choose-smalltitle{position:relative;float:left;width:100%;height:4vw;font-size:3.5vw;color:#b3b3b3;font-weight:900}
+.client-body .id-choose-bigtitle{position:relative;float:left;width:100%;height:6vw;font-size:4.5vw;color:#000;margin-top:1vw;font-weight:900}
+.client-body .id-choose-card{position:relative;float:left;width:100%;margin-top:4vw;height:calc(50% - 9.5vw);padding:5vw}
+.client-body .id-choose-card-icon{position:relative;float:left;width:100%;text-align:left;margin-bottom:30vh}
+.client-body .id-choose-card-icon i{position:relative;font-size:14vw;color:#fff}
+.client-body .id-choose-card-title{position:relative;float:left;width:100%;font-size:8vw;font-weight:900;color:#fff}
+.client-body .id-choose-card-subtitle{position:relative;float:left;width:100%;font-size:4vw;font-weight:900;color:#fff}
+.client-body .id-choose-card-bttom{position:absolute;left:0;bottom:0;width:100%;height:auto;padding:7vw}
+.client-body .shoot-page{position:relative;float:left;width:100%;height:100%;overflow:auto;padding:8vw}
+.client-body .skill-choose-page{position:relative;float:left;width:100%;height:100%;overflow:hidden;padding:8vw}
+.client-body .skill-card{position:relative;float:left;width:95%;height:calc(100% - 20vw);margin:10vw 2.5vw;box-shadow:0 1vw 10vw -2vw rgba(0,0,0,.2);padding:10vw}
+.client-body .swiper-container-skill-choose{position:relative;float:left;width:100%;height:calc(100% - 11vw);padding-left:1.8vw}
+.client-body .skill-card-icon{position:relative;float:left;width:100%;text-align:left;margin-bottom:30vh}
+.client-body .skill-card-icon i{position:relative;font-size:20vw;color:#fff}
+.client-body .skill-card-title{position:relative;float:left;width:100%;font-size:10vw;font-weight:900;color:#fff}
+.client-body .skill-card-subtitle{position:relative;float:left;width:100%;font-size:6vw;font-weight:900;color:#fff}
+.client-body .skill-card-smalltitle{position:relative;float:left;width:100%;font-size:4.5vw;font-weight:900;color:#fff}
+.client-body .skill-card-bttom{position:absolute;left:0;bottom:0;width:100%;height:auto;padding:10vw}
+.client-body .state-btn{position:fixed;right:5vw;top:23vw;border-radius:50%;box-shadow:0 1vw 10vw -2vw rgba(0,0,0,.4);height:30vw;width:30vw;z-index:3;cursor:pointer;text-align:center;transform:scale(.5);transform-origin:100% 0}
+.client-body .state-healthy{background-image:linear-gradient(135deg,#79f1a4 10%,#0e5cad 100%)}
+.client-body .state-nearlydead{background-image:linear-gradient(135deg,#f05f57 10%,#360940 100%)}
+.client-body .state-text{font-size:9vw;font-weight:900;margin-top:4.5vw}
+.client-body .state-smalltext{font-size:6vw;font-weight:900}
+.client-body .userstate-page{position:relative;float:left;width:100%;height:100%;overflow:hidden;padding:8vw}
+.client-body .userstate-healthy{position:relative;float:left;width:100%;height:60vw;color:#10ac84}
+.client-body .userstate-nearlydead{position:relative;float:left;width:100%;height:60vw;color:#ee5253}
+.client-body .userstate-bigtext{position:relative;float:left;width:100%;text-align:center;font-size:10vw;font-weight:900;margin-top:15vw}
+.client-body .userstate-smalltext{position:relative;float:left;width:100%;text-align:center;font-size:4.5vw;font-weight:900;margin-top:2vw;padding:0 10vw}
+.client-body .question{position:relative;float:left;width:100%;height:auto}
+.client-body .question-title{position:relative;float:left;width:100%;height:auto;padding-left:6vw;font-size:4.5vw;font-weight:600;color:#000;line-height:6vw;margin-top:3vw;margin-bottom:1vw}
+.client-body .question-answer{position:relative;float:left;width:100%;height:auto;padding-left:6vw;font-size:3.5vw;font-weight:400;color:#b3b3b3;line-height:5vw;margin-top:0;margin-bottom:1vw}
+.client-body .question-icon{position:absolute;left:0;top:0}
+.client-body .user-job-page{position:relative;float:left;width:100%;height:100%;overflow:auto;padding:8vw}
+.client-body .user-job-pic{position:relative;float:left;width:100%;height:auto;margin-top:10vw;text-align:center}
+.client-body .user-job-pic img{position:relative;width:50vw;height:50vw;border-radius:50%}
+.client-body .user-job-pic-title{position:relative;width:100%;text-align:center;padding:0 9vw;font-size:8vw;margin-top:5vw;font-weight:900}
+.client-body .user-job-pic-text{position:relative;width:100%;text-align:center;padding:0 9vw;font-size:4.5vw;line-height:6vw;margin-top:3vw;font-weight:900;color:#ee5253}
+.client-body .user-job-skill{position:relative;float:left;width:100%;height:auto;margin-top:10vw}
+.client-body .user-job-skill-title{position:relative;text-align:center;float:left;width:100%;height:auto;font-size:4.5vw;font-weight:600;color:#000;line-height:6vw;margin-top:3vw;margin-bottom:1vw}
+.client-body .user-job-skill-content{position:relative;text-align:center;float:left;width:100%;height:auto;font-size:3.5vw;font-weight:400;color:#b3b3b3;line-height:5vw;margin-top:0;margin-bottom:1vw}
+.client-body .user-id-page{position:relative;float:left;width:100%;height:100%;overflow-y:auto;overflow-x:hidden;padding:8vw}
+.client-body .swiper-container-user-id{position:relative;float:left;width:100%;height:132.2vw}
+.client-body .swiper-container-user-id .swiper-slide{position:relative;float:left;width:80vw;height:122.2vw;margin-top:10vw;overflow:auto}
+.client-body .user-id-pokecard{position:relative;float:left;width:100%;height:100%}
+.client-body .user-id-tips{position:absolute;top:22vw;left:0;width:100%;text-align:center;font-size:3.5vw;opacity:.4}
+.client-body .passport-pic{position:absolute;width:73vw;height:94.4vw;top:-20vw;left:5vw;border-radius:3vw}
+.client-body .user-id-belowpassport{position:relative;float:left;width:100%;height:100%;padding:80vw 8vw 8vw 8vw;text-align:center}
+.client-body .user-id-infoblock{position:relative;float:left;width:100%;text-align:center;margin-bottom:2vw}
+.client-body .user-id-num{font-size:8vw;font-weight:900;color:#ee5253}
+.client-body .user-id-text{font-size:4.5vw;font-weight:900}
+.client-body .user-id-description{position:relative;float:left;width:100%;padding:10vw 10vw;font-size:5vw;line-height:7vw;font-weight:900}
+.client-body .swiper-container-user-id-skill{position:relative;float:left;width:100%}
+.client-body .swiper-container-user-id-skill .swiper-wrapper{height:auto!important}
+.client-body .swiper-container-user-id-skill .swiper-slide{position:relative;float:left;height:auto;width:100%;text-align:center}
+.client-body .user-id-skill-card{width:60vw;background-image:linear-gradient(135deg,#f97794 10%,#623aa2 100%);padding:5vw;text-align:left}
+.client-body .user-id-skill-title{font-size:6.5vw;font-weight:900;color:#fff}
+.client-body .user-id-skill-content{font-size:4vw;font-weight:4;margin-top:1.5vw;color:#fff}
+.client-body .person-choose-page{position:relative;float:left;width:100%;height:100%;overflow:auto;padding:8vw}
+.client-body .person-choose-card-outer{position:relative;float:left;width:100%;margin-top:5vw;margin-bottom:5vw;height:calc(100% - 11vw - 11vw - 10vw);overflow:auto}
+.client-body .person-choose-btn-outer{position:relative;float:left;width:100%;height:11vw}
+.client-body .person-choose-card{position:relative;float:left;height:11vw;width:90%;margin:1vw 5% 3vw 5%;text-align:center;line-height:11vw;font-weight:900;font-size:4.5vw}
+.client-body .person-choose-btn{position:relative;float:left;width:calc(50% - 2vw);text-align:center;height:11vw;line-height:11vw;font-weight:900;font-size:4.5vw}
+.client-body .person-choose-btn:nth-of-type(1){margin-right:4vw}
+.client-body .user-msg-page{position:relative;float:left;width:100%;height:100%;overflow-y:auto;overflow-x:hidden;padding:8vw}
+.client-body .user-msg-outer{position:relative;float:left;width:100%;height:calc(100% - 16vw);overflow-y:auto;overflow-x:hidden;margin-top:5vw}
+.client-body .user-msg{position:relative;float:left;width:100%;height:12vw;border-bottom:1px solid #e6e6e6;padding:3vw;overflow:hidden;transition:all .3s ease}
+.client-body .user-msg:nth-of-type(1){border-top:1px solid #e6e6e6}
+.client-body .user-msg-title{position:relative;float:left;width:100%;font-size:4vw;font-weight:900;margin-bottom:3vw;padding-right:8vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.client-body .user-msg-icon{position:absolute;top:3.5vw;right:3vw;font-size:8vw;color:rgba(0,0,0,.5)}
+.client-body .user-msg-page .reading{height:auto}
+.client-body .user-msg-page .reading .user-msg-icon{display:none}
+.client-body .user-msg-content{font-size:3.5vw;margin-bottom:2vw}
+.client-body .user-msg-page .read .user-msg-title{font-weight:400!important}
+.client-body .user-msg-page .reading .user-msg-title{font-weight:400!important}
+.client-body .user-preference-page{position:relative;float:left;width:100%;height:100%;overflow-y:auto;overflow-x:hidden;padding:8vw}
+.client-body .swiper-container-user-preference{position:relative;float:left;width:100%;height:calc(100% - 16vw);margin-top:5vw}
+.client-body .swiper-container-user-preference .swiper-slide{overflow:hidden;padding:5vw}
+.client-body .user-preference-internal{width:70vw}
+.client-body .user-preference-bigtitle{position:relative;width:100%;float:left;font-size:6vw;font-weight:900;margin-bottom:2vw}
+.client-body .user-preference-description{position:relative;float:left;width:100%;font-size:3.8vw;line-height:5vw;margin-bottom:2vw}
+.client-body .user-preference-tips{position:relative;float:left;width:100%;font-size:4vw;font-weight:900}
+.client-body .user-preference-btn{position:relative;float:left;width:100%;height:11vw;text-align:center;margin-top:5vw;font-weight:900;line-height:11vw}
+.client-body .user-preference-ps{position:relative;float:left;width:100%;margin-top:1vw;text-align:center;font-size:3vw;opacity:.5}
+.client-body .user-preference-block{position:relative;float:left;width:80vw;height:calc(100% - 16vw);margin-top:5vw}
+.client-body .popup-outer{position:absolute;left:0;top:0;height:100vh;width:100vw;z-index:100}
+.client-body .popup{width:65vw;min-height:20vw;background-color:#fff;z-index:100;text-align:center}
+.client-body .popup-title{position:relative;float:left;width:100%;text-align:center;padding:4vw 4vw 2vw 4vw;font-size:4.5vw;font-weight:900}
+.client-body .popup-text{position:relative;float:left;width:100%;text-align:center;padding:0 4vw 2vw 4vw;font-size:4vw;font-weight:400;margin-bottom:2vw}
+.client-body .popup-btn-outer{position:relative;float:left;width:100%;height:auto;border-top:1px solid #e6e6e6}
+.client-body .popup-btn{position:relative;float:left;width:100%;text-align:center;height:11vw;line-height:11vw;font-size:4vw;cursor:pointer}
+.client-body .popup-btn-2{position:relative;float:left;width:calc(50% - .5px);text-align:center;height:11vw;line-height:11vw;font-size:4vw;cursor:pointer}
+.client-body .popup-btn-2:nth-of-type(1){border-right:1px solid #e6e6e6}
+.client-body .user-firstlogin-page{position:relative;float:left;width:100%;height:100%;overflow-y:auto;overflow-x:hidden;padding:8vw;background-size:cover}
+.client-body .firstlogin-text-box{width:70vw;height:auto;color:#ebebeb;font-size:3.8vw;line-height:5vw}
+.client-body .firstlogin-text{position:relative;float:left;width:100%;height:auto;text-align:center;margin:2vw 0}
+.client-body .firstlogin-text-2{position:relative;float:left;width:100%;height:auto;opacity:.5;text-align:center;margin:2vw 0}
+.client-body .firstlogin-text-title{position:relative;float:left;width:100%;height:auto;text-align:left;margin:2vw 0}
+.client-body .firstlogin-text-3{position:relative;float:left;width:100%;height:auto;text-align:left;margin:2vw 0}
+.client-body .firstlogin-img{position:relative;float:left;width:100%;margin:4vw 0;text-align:center}
+.client-body .firstlogin-img img{height:30vw;width:18.5vw;border-radius:1vw}
+.client-body .bottomlize{position:absolute;bottom:30vw;left:15vw}
+.client-body .user-dead-page{position:relative;float:left;width:100%;height:100%;overflow-y:auto;overflow-x:hidden;padding:8vw;background-size:cover}
+.client-body .ongoing{position:absolute;display:block;left:0;top:0;width:100vw;height:100vh;z-index:1000;background-color:#fff}
+.client-body .fake .text-fake{font-family:SimSun!important}

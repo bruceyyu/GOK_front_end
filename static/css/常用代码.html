@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="">
+
+ color: rgba(154,154,154,1);
+常用Style
+
+.导航栏 {font-size:34px;}
+.标题 {font-size:30px;}
+.正文 {font-size:26px;}
+.说明 {font-size:22px;}
+
+.bg-black {background-color: #080808;}
+.bg-dark {background-color: #313131;}
+.bg-light {background-color: #F5F5F5;}
+.bg-white {background-color: #FFFFFF;}
+
+.font-white {color: #EBEBEB;}
+.font-gray {color: #B3B3B3;}
+.font-dark {color: #5D6C75;}
+.icon-gray {color: #666666;}
+
+.gold {color: #FFD700;}
+.sliver {color: #C0C0C0;}
+.bronze {color: #CD853F;}
+
+.red-D {color: 	#B22222;}
+.black {color: #0E0E0E}
+
+.radius {
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	-ms-border-radius: 14px;
+	-o-border-radius: 14px;
+	border-radius: 14px;
+}
+.shadow {
+	box-shadow: 0px 10px 60px -8px rgba(0,0,0,0.3);
+}
+.circle {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.section- {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: auto;
+	padding: 0px 24px;
+	margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+
+带返回按钮的页面头部
+<div class="section-header"> 
+	<div class="back"><i class="iconfont icon-back"></i></div> //返回按钮
+	<div class="address">专业版分析系统</div> //页面路径
+</div>
+
+带返回按钮顶部标签栏的页面头部
+<div class="section-header"> 
+	<div class="back"><i class="iconfont icon-back"></i></div> //返回按钮
+	<div class="top-title-swiper">
+		<div class="top-title-underline-box">
+			<div class="top-title-underline"></div>
+		</div>
+		<div class="swiper-container top-title-swiper" id="top_title_swiper">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide "><div data-swiper-parallax="0" data-swiper-parallax-opacity="0.5" class="top-title-element on">产品1</div></div>
+		        <div class="swiper-slide"><div data-swiper-parallax="0" data-swiper-parallax-opacity="0.5" class="top-title-element">产品2</div></div>
+		        <div class="swiper-slide"><div data-swiper-parallax="0" data-swiper-parallax-opacity="0.5" class="top-title-element">产品3</div></div>
+		    </div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+  var mySwiper = new Swiper ('#top_title_swiper', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: false, // 循环模式选项
+    slidesPerView :'auto',
+    centeredSlides : true,
+    spaceBetween : 10,
+    parallax : true,
+    slideToClickedSlide: true,
+  })
+</script>
+
+
+带标签栏的页面头部
+<div class="header-with-menu">
+	<div class="head-menu-left"> //左对齐顶边栏
+		<div class="menu" id="">标签1</div>
+		<div class="menu" id="">标签2</div>
+	</div>
+	<div class="head-menu-mid"> //居中标签栏
+		<div class="menu" id="">标签1</div>
+		<div class="menu" id="">标签2</div>
+	</div>
+</div>
+
+
+
+卡片排布区域
+<div class="section-cards">
+
+	<div class="cards-1 blue"> //单卡片
+		<i class="iconfont"></i>
+		<h1>策略流派分析方法</h1>
+		<h2>快攻流?广告流?</h2>
+	</div>
+
+	<div class="single-card"> //自定义单卡片
+
+	</div>
+
+	<div class="cards-2 blue"> //双卡片
+		<i class="iconfont"></i>
+		<h1>策略流派分析方法</h1>
+		<h2>快攻流?广告流?</h2>
+	</div>
+	<div class="cards-2 blue">
+		<i class="iconfont"></i>
+		<h1>策略流派分析方法</h1>
+		<h2>快攻流?广告流?</h2>
+	</div>
+
+</div>
+
+
+关键数字排布区域
+<div class="section-nums">
+
+	<div class="num-1"> // 单列
+		<div class="num">
+			<h1 class="red-D">1500</h1>
+			<h2>总利润贡献</h2>
+			<h3>算法：产品每时期(周)内(营业额-制造成本-广告-折扣费用)的总和，在同行业中超过的产品数量比例</h3>
+		</div>
+	</div>
+
+	<div class="num-2"> // 双列
+		<div class="num">
+			<h1>1500</h1>
+			<h2>总利润贡献</h2>
+		</div>
+		<div class="num">
+			<h1>1500</h1>
+			<h2>总利润贡献</h2>
+		</div>
+	</div>
+
+	<div class="num-3"> // 三列
+		<div class="num">
+			<h1>1500</h1>
+			<h2>总利润贡献</h2>
+		</div>
+		<div class="num">
+			<h1>1500</h1>
+			<h2>总利润贡献</h2>
+		</div>
+		<div class="num">
+			<h1>1500</h1>
+			<h2>总利润贡献</h2>
+		</div>
+	</div>
+
+	<div class="e-charts-card"> // Echarts
+		<div class="chart" style="height: 200px;" id="">
+			<div></div>
+		</div>
+		<div class="title">竞争力统计图</div>
+	</div>
+
+	<div class="divd"><div class="divd-line"></div></div> // 分割线
+
+	<div class="subtitle">产品市场情况</div> // 标题
+
+	//固定表格
+	<table  border="0" class="table">
+		<tr>
+			<th>各类评价</th>
+			<th>高端</th>
+			<th>中端</th>
+			<th>低端</th>
+		</tr>
+		<tr>
+			<td>竞争力</td>
+			<td>25%</td>
+			<td>25%</td>
+			<td>25%</td>
+		</tr>
+		<tr>
+			<td>价格接受度</td>
+			<td>25%</td>
+			<td>25%</td>
+			<td>25%</td>
+		</tr>
+		<tr>
+			<td>质量喜好度</td>
+			<td>25%</td>
+			<td>25%</td>
+			<td>25%</td>
+		</tr>
+		<tr>
+			<td>品牌熟知度</td>
+			<td>25%</td>
+			<td>25%</td>
+			<td>25%</td>
+		</tr>
+		<tr>
+			<td>渠道满意度</td>
+			<td>25%</td>
+			<td>25%</td>
+			<td>25%</td>
+		</tr>
+		<tr>
+			<td>渠道利用率</td>
+			<td colspan="3">25%</td>
+		</tr>
+		<tr>
+			<td>广告效率</td>
+			<td colspan="3">25%</td>
+		</tr>
+	</table>
+
+
+
+</div>
+
+
+
+
+
+弹窗
+<div class="background-hover none"></div>
+<div class="popup-info none">
+	
+</div>
+
+
+文章-题目
+<div class="section-article-title max">
+	<div class="title">策略流派分析方法</div>
+</div>
+文章-作者
+<div class="section-article-writer max">
+	<div class="pic"><img src="../img/passport-bg.jpg"></div>
+	<div class="name">
+		<h1>沈涛</h1>
+		<h2>FE商业教育学术总监</h2>
+	</div>
+</div>
+文章-目录
+<div class="section-article-contents max" id="contents">
+	<h1 id="article-1-contents">目录</h1>
+	<a href="#article-1-topic1">
+		<div class="cards">市场策略综述</div>
+	</a>
+	<a href="#article-1-topic2">
+		<div class="cards">市场选择策略</div>
+	</a>
+	<a href="#article-1-topic3">
+		<div class="cards">市场投入策略</div>
+	</a>
+	<a href="#article-1-topic4">
+		<div class="cards">策略执行要点</div>
+	</a>
+	<a href="#article-1-topic5">
+		<div class="cards">策略执行要点——纯高端</div>
+	</a>
+	<a href="#article-1-topic6">
+		<div class="cards">策略执行要点——高端甩货</div>
+	</a>
+	<a href="#article-1-topic7">
+		<div class="cards">策略执行要点——中低端</div>
+	</a>
+	<a href="#article-1-topic8">
+		<div class="cards">策略执行要点——灵活选择消费者</div>
+	</a>
+	<a href="#article-1-topic9">
+		<div class="cards">策略克制与演变关系</div>
+	</a>
+</div>
+文章-目录-返回顶部
+<a href="#article-1-contents" class="backtotop-a">
+	<div class="backtotop"><i class="iconfont icon-top"></i></div>
+</a>
+文章-主体
+<div class="section-article-body max">
+	<h1 id=""></h1> //标题
+	<p></p> //段落
+	<img src=""> // 图片
+	<h2></h2> //强调
+</div>
+文章-时间戳
+<div class="section-article-bottom max">
+	<h1>发表于2018-12-4</h1>
+</div>
+
+列表
+<div class="section-list">
+	<div class="title">个人信息</div>
+	<div class="list-cell onclick">
+		<div class="list-cell-bd">123</div>
+		<div class="list-cell-ft">123</i></div>
+	</div>
+	<div class="list-cell onclick">
+		<div class="list-cell-hd"><i class="iconfont icon-dollar-sign"></i></div>
+		<div class="list-cell-bd">123</div>
+		<div class="list-cell-ft"><i class="iconfont icon-xiayiyeqianjinchakangengduo"></i></div>
+	</div>
+	<div class="list-cell onclick">
+		<div class="list-cell-hd"><i class="iconfont icon-dollar-sign"></i></div>
+		<div class="list-cell-bd">123</div>
+		<div class="list-cell-ft">说明文字</div>
+	</div>
+	<div class="list-cell onclick">
+		<div class="list-cell-hd"><i class="iconfont icon-dollar-sign"></i></div>
+		<div class="list-cell-bd">123</div>
+		<div class="list-cell-ft">说明文字<i class="iconfont icon-xiayiyeqianjinchakangengduo"></i></div>
+	</div>
+</div>
+
+<!-- 页面制作中 Start -->
+<div class="unfinished">
+    <div class="unfinished_icon">
+        <i class="iconfont icon-jiazailoading-A"></i>
+        <i class="iconfont icon-jiazailoading-A"></i>
+        <i class="iconfont icon-jiazailoading-A"></i>
+    </div>
+    <h1>攻城狮正在制作这个页面</h1>
+    <h2>社团页面暂未开放</h2>
+</div>
+<!-- 页面制作中 end -->
+
+管理员界面
+菜单：
+<div class="sidebar-box">
+	<div class="title"><i class="iconfont icon-group"></i>社团管理</div>
+	<div class="subtitle" onclick="mgt_openpage('clubpost')">社团公告</div>
+	<div class="subtitle">成员管理<i class="new"></i></div>
+	<div class="subtitle">认证审批</div>
+	<div class="subtitle">推荐峰会</div>
+</div>
+内容页面
+标题：
+<div class="head">
+	<div class="title">社团公告</div>
+	<div class="tips">这里应该是一句提示或者超链接</div>
+	下面是顶部切换栏
+	<div class="title-tab">
+		<div class="title-tab-nav current">新建公告</div>
+		<div class="title-tab-nav">历史公告</div>
+		<div class="title-tab-nav">历史公告</div>
+	</div>
+</div>
+白底块：
+<div class="pannel">
+	<div class="box"></div> 内容块
+	<div class="dvid"></div> 分隔栏
+</div>
+
+文字块：
+<div class="word-main">
+	<div class="title">新建社团公告</div>
+	<div class="subtitle">社团公告将会在社员的FE-Passport系统中循环播放，同时仅能有最多3条社团公告，所有的社团管理员都有新增/修改/删除社团公告的权限。社团公告将会在社员的FE-Passport系统中循环播放，同时仅能有最多3条社团公告，所有的社团管理员都有新增/修改/删除社团公告的权限。
+	</div>
+</div>
+<div class="Vmiddle word-function"><i class="iconfont icon-angle-right"></i></div> // 右部功能
+
+输入框：
+<div class="edit-function">
+	输入框顶部栏目
+	<div class="edit-tabbar">
+		<div class="edit-tabbar-block active-green"><i class="iconfont icon-31qiandao"></i>文字</div>
+		<div class="edit-tabbar-block"><i class="iconfont icon-31qiandao"></i>文字</div>
+		<div class="edit-tabbar-block"><i class="iconfont icon-31qiandao"></i>文字</div>
+	</div>
+	输入框主体：
+	<div class="edit-area" contenteditable="ture" placeholder="请在这儿输入内容">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+	输入框底边栏：
+	<div class="edit-toolbar">
+		<div class="left">
+			<div class="edit-toolbar-block"><i class="iconfont icon-arrow-circle-up"></i></div>
+		</div>
+		<div class="right">
+			<div class="edit-toolbar-block">还可以输入<font>538</font>字，按下Enter键换行</div>
+		</div>
+	</div>
+</div>
+
+按钮块：
+<div class="btn-function">
+	<div class="btn btn-green">发布公告</div>
+	<div class="btn btn-gray">删除</div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+.s-common-button {
+	background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	margin: 0 auto;
+	padding: 16px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .1s cubic-bezier(.7,0,.3,1);
+	zoom: 1;
+}
+.s-action-buttion {
+	padding: 20px 35px;
+}
+    

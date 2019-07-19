@@ -1,0 +1,55 @@
+﻿
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <title>Game Of Kings 五王之乱</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="icon" type="image/x-icon" href="static/img/logoweb.ico">
+    <link rel="stylesheet" href="/static/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="/static/css/MANAGERstyle.css" type="text/css" />
+    <!-- 图标css -->
+    <link rel="stylesheet" href="/static/css/iconfont.css" type="text/css" />
+    <!-- Swiper组件的css -->
+    <link rel="stylesheet" href="/static/css/swiper.min.css" type="text/css" />
+    <!-- jQuery -->
+    <script type="text/javascript" src="/static/utils/js/jquery-2.1.1.min.js" charset="utf-8"></script>
+    <!-- 页面启动时加载的JS -->
+    <script type="text/javascript" src="/static/utils/js/userLoad.js" charset="utf-8"></script>
+    <!-- Swiper组件 -->
+    <script type="text/javascript" src="/static/utils/js/swiper.min.js" charset="utf-8"></script>
+    <!-- accounting-->
+    <script src="/static/utils/js/accounting.js"></script>
+
+    <style>
+		.fade-leave-to{
+			opacity: 0;
+		}
+		.fade-leave-active{
+			transition: opacity 0.3s;
+        }
+        .fade-enter{
+			opacity: 0;
+		}
+		.fade-enter-active{
+			transition: opacity 1.7s;
+        }
+    </style>
+
+
+</head>
+<body class="body client-body">
+<!-- 前面内容是为了在PC现实中包在一个手机框内 -->
+
+<div id="app">
+    <transition name="fade">
+        <router-view></router-view>
+    </transition>   
+</div>
+
+</body>
+
+
+</html>
