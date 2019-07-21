@@ -8,7 +8,7 @@
             <div class="id-choose-bigtitle">选择你希望使用的方式</div>
         </div>
         <div @click="execClickRouter" v-if="job_name!=='商人' && job_name!=='赏金猎人'"
-            class="id-choose-card radius" style="background: linear-gradient(135deg, rgba(240,95,87,0.85), rgba(54,9,64,0.85)),url(../static/img/shoot-bg1.jpg) center center;background-size: cover;">
+            class="id-choose-card radius" style="background: linear-gradient(135deg, rgba(240,95,87,0.85), rgba(54,9,64,0.85)),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/shoot-bg1.jpg) center center;background-size: cover;">
             <div class="id-choose-card-icon" style=""><i class="iconfont icon-qiangzhi" style=""></i></div>
             <div class="id-choose-card-bttom">
                 <div class="id-choose-card-title">处决</div>
@@ -16,7 +16,7 @@
             </div>
         </div>
         <div @click="assaClickRouter" v-if="job_name!=='商人'"
-            class="id-choose-card radius" style="background: linear-gradient(135deg, rgba(173,169,150,0.8), rgba(26,26,26,0.8)),url(../static/img/shoot-bg2.jpg) right top ;background-size: cover;">
+            class="id-choose-card radius" style="background: linear-gradient(135deg, rgba(173,169,150,0.8), rgba(26,26,26,0.8)),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/shoot-bg2.jpg) right top ;background-size: cover;">
             <div class="id-choose-card-icon" style="margin-top: 2vw; margin-left: 2vw;"><i class="iconfont icon-hide" style="font-size: 10vw"></i></div>
             <div class="id-choose-card-bttom">
                 <div class="id-choose-card-title">暗杀</div>
@@ -25,7 +25,7 @@
             </div>
         </div>
         <div @click="giveClickRouter"
-            class="id-choose-card radius" style="background: linear-gradient(135deg, rgba(94,252,232,0.8), rgba(115,110,254,0.8)),url(../static/img/shoot-bg3.jpg) center center ;background-size: cover;">
+            class="id-choose-card radius" style="background: linear-gradient(135deg, rgba(94,252,232,0.8), rgba(115,110,254,0.8)),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/shoot-bg3.jpg) center center ;background-size: cover;">
             <div class="id-choose-card-icon" style="margin-top: 2vw; margin-left: 2vw;"><i class="iconfont icon-jiantou_zuoyouqiehuan" style="font-size: 10vw"></i></div>
             <div class="id-choose-card-bttom">
                 <div class="id-choose-card-title">给予</div>

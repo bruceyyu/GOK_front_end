@@ -1,6 +1,6 @@
 <template>
 <div @click="firstCome2Router"
-    class="user-firstlogin-page" style="background-image: url(../static/img/firstlogin-bg1.jpg);">
+    class="user-firstlogin-page" style="background-image: url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/firstlogin-bg1.jpg);">
     <div class="firstlogin-text-box centerlize">
         <div class="firstlogin-text" id="line1">201X.X.XX</div>
         <div class="firstlogin-text" id="line2">这天晚上</div>

@@ -12,7 +12,7 @@
 				<img :src="cardSrc" class="user-id-pokecard">
 			</div>
 			<div class="swiper-slide shadow radius">
-				<img src="../../../../static/img/id-pic1.jpg" class="passport-pic shadow">
+				<img src="https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/id-pic1.jpg" class="passport-pic shadow">
 				<div class="user-id-belowpassport">
 					<div class="user-id-infoblock">
 						<div class="user-id-num">{{name}}</div>
@@ -62,7 +62,7 @@ export default {
 	},
 	computed: {
 		cardSrc() {
-			return './static/img_cards/' + this.src + '.jpg'
+			return 'https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img_cards/' + this.src + '.jpg'
 		}
 	},
 	mounted() {

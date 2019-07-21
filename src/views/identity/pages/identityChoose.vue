@@ -6,7 +6,7 @@
             <div class="id-choose-bigtitle">选择你要查看的身份</div>
         </div>
         <div class="id-choose-card radius" @click="id1ClickRouter"
-            style="background: linear-gradient(135deg, rgba(253,110,106,0.8), rgba(255,198,0,0.8)),url(../static/img/id-choose-bg1.jpg) center center ;background-size: cover;">
+            style="background: linear-gradient(135deg, rgba(253,110,106,0.8), rgba(255,198,0,0.8)),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/id-choose-bg1.jpg) center center ;background-size: cover;">
             <div class="id-choose-card-icon" style=""><i class="iconfont icon-guanliyuansousuo" style=""></i></div>
             <div class="id-choose-card-bttom">
                 <div class="id-choose-card-title">表面身份</div>
@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="id-choose-card radius"  @click="id2ClickRouter"
-            style="background: linear-gradient(135deg, rgba(173,169,150,0.8), rgba(26,26,26,0.8)),url(../static/img/id-choose-bg2.jpg) center center ;background-size: cover;">
+            style="background: linear-gradient(135deg, rgba(173,169,150,0.8), rgba(26,26,26,0.8)),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/id-choose-bg2.jpg) center center ;background-size: cover;">
             <div class="id-choose-card-icon" style=""><i class="iconfont icon-dunpaibaowei" style=""></i></div>
             <div class="id-choose-card-bttom">
                 <div class="id-choose-card-title">隐藏身份</div>

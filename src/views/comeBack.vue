@@ -1,14 +1,14 @@
 <template>
     <div class="comeback-page" id="">
 	<div class="login-bg-area centerlize">
-		<img src="../../static/img/login-bg1.png" id="login-bg-pic1">
-		<img src="../../static/img/login-bg2.png" id="login-bg-pic2">
-		<img src="../../static/img/login-bg3.png" id="login-bg-pic3">
+		<img src="https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/login-bg1.png" id="login-bg-pic1">
+		<img src="https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/login-bg2.png" id="login-bg-pic2">
+		<img src="https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/login-bg3.png" id="login-bg-pic3">
 	</div>
 	<div class="comeback-content">
 		<div class="comeback-content-inner centerlize">
 			<div class="login-logo">
-				<img src="../../static/img/sub-logo.png">
+				<img src="https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/sub-logo.png">
 			</div>
 			<div class="comeback-text">哟<br/><font class="red-D">{{ name }}</font><br/>回来了?<br/>那我们继续吧</div>
 			<div class="login-inputbtn radius shadow mix-gray font-gray" @click="firstComeClickRouter">重温那个梦</div>

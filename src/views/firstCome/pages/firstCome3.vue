@@ -1,6 +1,6 @@
 <template>
     <div @click="usermainRouter"
-        class="user-firstlogin-page" style="background-image: url(../static/img/firstlogin-bg1.jpg);">
+        class="user-firstlogin-page" style="background-image: url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/firstlogin-bg1.jpg);">
         <div class="firstlogin-text-box centerlize">
         <div class="firstlogin-text-title">五王之乱规则解释</div>
         <div class="firstlogin-text-3">整个破冰游戏从X.XX的X:XX开始一直持续到X.XX的X:XX，目标完成度最高、表现最卓越的玩家将获得【破冰游戏赢家】称号，并在接下来的几天中拥有一定程度的优势。</div>

@@ -37,16 +37,32 @@
 .client-body .none{display:none}
 .client-body .hide{visibility:hidden}
 .client-body .swiper-container{position:relative;float:left;width:100%;height:100%}
-.client-body @media (max-aspect-ratio:4/5){.pc-outer{position:relative;float:left;height:100%;width:100%;overflow:hidden}
-.client-body .pc-user{position:relative;float:left;height:100%;width:100%;overflow:hidden}
-.client-body .pc-warnning{display:none}
-.client-body }
-.client-body @media (min-aspect-ratio:4/5){.pc-outer{width:95vh;height:75vh;overflow:hidden}
+
+@media (max-aspect-ratio:4/5) {
+    .pc-outer{
+        position:relative;
+        float:left;
+        height:100%;
+        width:100%;
+        overflow:hidden;
+    }
+    .pc-user{
+        position:relative;
+        float:left;
+        height:100%;
+        width:100%;
+        overflow:hidden;
+    }
+    .pc-warnning{
+        display:none
+    }
+}
+@media (min-aspect-ratio:4/5){.pc-outer{width:95vh;height:75vh;overflow:hidden}
 .client-body .pc-user{position:relative;float:left;height:100%;width:34.61vh;overflow:hidden;box-sizing:border-box;border:1px solid #000}
 .client-body .pc-warnning{position:relative;float:left;width:60.39vh;height:100%;overflow:hidden;text-align:center}
 .client-body .pc-warnning img{height:20vh;width:20vh;margin-bottom:5vh;margin-top:20vh}
 .client-body .pc-warnning-text{font-size:2vh;line-height:2.5vh;font-weight:900}
-.client-body }
+}
 .client-body .login-page{position:relative;float:left;width:100%;height:100%;overflow:hidden}
 .client-body .login-bg-area{position:absolute;width:120vw;height:242vw;overflow:hidden;z-index:1;background-color:rgba(255,255,255,1)}
 .client-body .login-bg-area img{position:absolute;width:120vw;height:242vw;overflow:hidden;left:0;top:0;border:0 solid rgba(255,255,255,0);color:#fff}

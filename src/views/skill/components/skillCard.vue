@@ -1,6 +1,6 @@
 <template>
         <div class="swiper-slide" v-if="skill_active_on" @click="skillCardClick">
-            <div class="skill-card radius" style="background: linear-gradient(135deg, rgba(255,157,108,0.85), rgba(187,78,117,0.85)),url(../static/img/usermain-bg1.jpg) left bottom;background-size: cover;">
+            <div class="skill-card radius" style="background: linear-gradient(135deg, rgba(255,157,108,0.85), rgba(187,78,117,0.85)),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/usermain-bg1.jpg) left bottom;background-size: cover;">
             <!-- <div class="skill-card-icon"><i class="iconfont icon-ID"></i></div> -->
             <div class="skill-card-bttom">
                 <div class="skill-card-title">{{skill_name}}</div>
@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="swiper-slide" v-else>
-            <div class="skill-card radius" style="background: linear-gradient(135deg, rgba(173,169,150,0.8), rgba(26,26,26,0.8)),url(../static/img/usermain-bg1.jpg) left bottom;background-size: cover;">
+            <div class="skill-card radius" style="background: linear-gradient(135deg, rgba(173,169,150,0.8), rgba(26,26,26,0.8)),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/usermain-bg1.jpg) left bottom;background-size: cover;">
             <!-- <div class="skill-card-icon"><i class="iconfont icon-ID"></i></div> -->
             <div class="skill-card-bttom">
                 <div class="skill-card-title">{{skill_name}}</div>

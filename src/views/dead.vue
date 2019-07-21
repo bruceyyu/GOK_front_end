@@ -1,5 +1,5 @@
 <template>
-    <div class="user-dead-page" style="background-image: url(../static/img/dead-bg.jpg);">
+    <div class="user-dead-page" style="background-image: url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/dead-bg.jpg);">
     <message
     :msg_count = 0>
     </message>

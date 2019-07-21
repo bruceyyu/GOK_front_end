@@ -1,6 +1,6 @@
 <template>
 <div @click="firstCome3Router"
-    class="user-firstlogin-page" style="background-image: url(../static/img/firstlogin-bg2.jpg);">
+    class="user-firstlogin-page" style="background-image: url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/firstlogin-bg2.jpg);">
     <div class="firstlogin-text-box bottomlize">
     <div class="firstlogin-text" id="line1">我在你们这些凡人中</div>
     <div class="firstlogin-text" id="line2">有五张牌是我钦点的王</div>

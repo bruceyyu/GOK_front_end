@@ -3,7 +3,7 @@
 	<div class="id-choose-bigtitle" align="center">你是平民，第一次登陆请选择倾向</div>
 	<div class="swiper-container-user-preference">
 		<div class="swiper-wrapper">
-			<div class="swiper-slide shadow radius" style="background: linear-gradient(135deg, rgba(151,171,255,0.9), rgba(255,255,255,1) 80%),url(../static/img/preference1.jpg) left bottom;background-size: cover;">
+			<div class="swiper-slide shadow radius" style="background: linear-gradient(135deg, rgba(151,171,255,0.9), rgba(255,255,255,1) 80%),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/preference1.jpg) left bottom;background-size: cover;">
 				<div class="user-preference-internal centerlize">	
 					<div class="user-preference-bigtitle">正义</div>
 					<div class="user-preference-description">你一直觉得自己三观够正，这个世界需要平等、秩序、公平、正义，你希望维护这个世界目前的规则，那要比听从某个神棍的伪科学来的更理智。你认为秉持这样的信念，才能帮助这个世界回到出现这件诡异的事情之前的轨道。</div>
@@ -15,7 +15,7 @@
 					<div class="user-preference-ps">*选择倾向后不可更改</div>
 				</div>
 			</div>
-			<div class="swiper-slide shadow radius" style="background: linear-gradient(135deg, rgba(255,233,133,0.75), rgba(255,255,255,1) 80%),url(../static/img/preference2.jpg) left bottom;background-size: cover;">
+			<div class="swiper-slide shadow radius" style="background: linear-gradient(135deg, rgba(255,233,133,0.75), rgba(255,255,255,1) 80%),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/preference2.jpg) left bottom;background-size: cover;">
 				<div class="user-preference-internal centerlize">	
 					<div class="user-preference-bigtitle">中立</div>
 					<div class="user-preference-description">很遗憾，你不是王。作为勤勤恳恳工作、安安稳稳生活了小半辈子的你，挠破脑袋也没能想明白为何会出现此等反科学的事情。但是互联网上大家纷纷扰扰的讨论，又不得不让你面对现实——每一个人都梦见了上帝，记忆非常清楚，而且上帝在每一个人梦中说的话都一模一样。但话又说回来，被谁统治又有什么区别呢？你觉得还是自己活下来才是真正重要的——你的家人都需要你。这个世界总会平静下来的，何不就此捞一笔呢？</div>
@@ -27,7 +27,7 @@
 					<div class="user-preference-ps">*选择倾向后不可更改</div>
 				</div>
 			</div>
-			<div class="swiper-slide shadow radius" style="background: linear-gradient(135deg, rgba(186,70,80,0.9), rgba(255,255,255,1) 80%),url(../static/img/preference3.jpg) left bottom;background-size: cover;">
+			<div class="swiper-slide shadow radius" style="background: linear-gradient(135deg, rgba(186,70,80,0.9), rgba(255,255,255,1) 80%),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/preference3.jpg) left bottom;background-size: cover;">
 				<div class="user-preference-internal centerlize">	
 					<div class="user-preference-bigtitle">邪恶</div>
 					<div class="user-preference-description">有时候你也会觉得这个世界并非它看起来这么美好。表面的和睦背后充满了背叛、欺诈、瞒骗、歧视和压迫，每一个高高在上的统治者都声称“为人民服务”，到头来却改不了压榨老百姓的本性。甚至你觉得换一个政府或者没有政府是更好的选择——至少不会有人用暴力机器来剥夺本属于你的权利。因此你开始觉得这是一个机会，一个付诸你邪恶想法于行动的机会——反抗这个世界，移除所有压在你头上的压榨机关。</div>

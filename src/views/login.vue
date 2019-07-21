@@ -1,14 +1,14 @@
 <template>
     <div class="login-page" id="page_login">
 	<div class="login-bg-area centerlize">
-		<img src="../../static/img/login-bg1.png" id="login-bg-pic1">
-		<img src="../../static/img/login-bg2.png" id="login-bg-pic2">
-		<img src="../../static/img/login-bg3.png" id="login-bg-pic3">
+		<img src="https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/login-bg1.png" id="login-bg-pic1">
+		<img src="https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/login-bg2.png" id="login-bg-pic2">
+		<img src="https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/login-bg3.png" id="login-bg-pic3">
 	</div>
 	<div class="login-content">
 		<div class="login-content-inner centerlize">
 			<div class="login-logo">
-				<img src="../../static/img/sub-logo.png">
+				<img src="https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/sub-logo.png">
 			</div>
 			<div class="login-inputbar radius shadow">
 				<div class="login-inputbar-icon"><i class="iconfont icon-gerentouxiang"></i></div>
@@ -20,6 +20,7 @@
 			</div>
 			<div class="login-inputbtn radius shadow mix-red" @click="login">登录</div>
 			<div class="login-inputbtn radius shadow mix-gray font-gray">忘记帐号/密码</div>
+			<div class="login-inputbtn radius shadow mix-gray font-gray" @click="adminRouter">管理员</div>
 			<div class="login-description">《五王之乱》高清重制版<br/>2019届FE全国商业峰会<br/>专用破冰游戏</div>
 		</div>
 	</div>
@@ -103,6 +104,9 @@ export default {
 					}
               	})
 			}
+		},
+		adminRouter() {
+			this.$router.push({name: 'adminlogin'})
 		}
 	}
 }

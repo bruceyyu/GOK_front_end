@@ -9,7 +9,7 @@
 	<div class="user-preference-block">
 		<div class="swiper-slide shadow radius" 
 			v-if="incl_name === '正义'"
-			v-bind:style="{ background: 'linear-gradient(135deg, rgba(151,171,255,0.9), rgba(255,255,255,1) 80%),url(../static/img/preference1.jpg) left bottom', backgroundSize: 'cover'}">
+			v-bind:style="{ background: 'linear-gradient(135deg, rgba(151,171,255,0.9), rgba(255,255,255,1) 80%),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/preference1.jpg) left bottom', backgroundSize: 'cover'}">
 			<div class="user-preference-internal centerlize">	
 				<div class="user-preference-bigtitle">{{ incl_name }}</div>
 				<!-- 因为有划掉的文字，需要标签<del>，所以使用v-html -->
@@ -19,7 +19,7 @@
 		</div>
 		<div class="swiper-slide shadow radius" 
 			v-else-if="incl_name == '中立'"
-			v-bind:style="{ background: 'linear-gradient(135deg, rgba(255,233,133,0.75), rgba(255,255,255,1) 80%),url(../static/img/preference2.jpg) left bottom', backgroundSize: 'cover'}">
+			v-bind:style="{ background: 'linear-gradient(135deg, rgba(255,233,133,0.75), rgba(255,255,255,1) 80%),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/preference2.jpg) left bottom', backgroundSize: 'cover'}">
 			<div class="user-preference-internal centerlize">	
 				<div class="user-preference-bigtitle">{{ incl_name }}</div>
 				<div class="user-preference-description">{{ incl_desc }}</div>
@@ -28,7 +28,7 @@
 		</div>
 		<div class="swiper-slide shadow radius" 
 			v-else-if="incl_name == '王牌'"
-			v-bind:style="{ background: 'linear-gradient(135deg, rgba(255,233,133,0.75), rgba(255,255,255,1) 80%),url(../static/img/preference4.jpg) left bottom', backgroundSize: 'cover'}">
+			v-bind:style="{ background: 'linear-gradient(135deg, rgba(255,233,133,0.75), rgba(255,255,255,1) 80%),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/preference4.jpg) left bottom', backgroundSize: 'cover'}">
 			<div class="user-preference-internal centerlize">	
 				<div class="user-preference-bigtitle">{{ incl_name }}</div>
 				<div class="user-preference-description">{{ incl_desc }}</div>
@@ -37,7 +37,7 @@
 		</div>
 		<div class="swiper-slide shadow radius" 
 			v-else-if="incl_name == '邪恶'||'邪恶-应许派'||'邪恶-止戈派'||'邪恶-兄弟派'"
-			v-bind:style="{ background: 'linear-gradient(135deg, rgba(186,70,80,0.9), rgba(255,255,255,1) 80%),url(../static/img/preference3.jpg) left bottom', backgroundSize: 'cover'}">
+			v-bind:style="{ background: 'linear-gradient(135deg, rgba(186,70,80,0.9), rgba(255,255,255,1) 80%),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/preference3.jpg) left bottom', backgroundSize: 'cover'}">
 			<div class="user-preference-internal centerlize">	
 				<div class="user-preference-bigtitle">{{ incl_name }}</div>
 				<div class="user-preference-description">{{ incl_desc }}</div>

@@ -2,12 +2,12 @@
 <div class="manager-body">
     <!-- 顶部边栏 -->
 <div class="topbar">
-	<div class="logo"><img src="../../static/img/logo-withtext.png"></div>
+	<div class="logo"><img src="https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/logo-withtext.png"></div>
 	<div class="account">
 		<div class="exit">
-            <div class="topbar-btn btn-green" @click="beginHandler">开始游戏</div>
-            <div class="topbar-btn" @click="pauseHandler">暂停游戏</div>
-            <div class="topbar-btn" @click="gunBanHandler">禁枪期开始</div>
+            <div class="topbar-btn btn-green" @click="beginHandler" v-if="gameOn == false">开始游戏</div>
+            <div class="topbar-btn" @click="pauseHandler" v-if="gameOn == true">暂停游戏</div>
+            <div class="topbar-btn" @click="gunBanHandler" v-if="gameOn == true">禁枪期开始</div>
 			<div class="maxheight setting-btn" @click="logout">
 				<i class="iconfont icon-dengchu"></i>
 			</div>
@@ -242,8 +242,8 @@ export default {
                 bullet_num: '', skill_limit: '', status: '', dietime: '', time: ''}, ],
 
                 history: [{id: '', time: '', content: ''}],
-
-            }
+            },
+            gameOn: false
         }
     },
     mounted() {
@@ -327,6 +327,7 @@ export default {
             this.$http.get(this.global.serverSrc + '/admin/AdminMethodHandler.ashx?method=begin',{withCredentials: true})
 			.then(res=>{
                 if (res.data == "ok"){
+                    gameOn = true
                     alert("GAME IS ON")
                 }
 				}, res => {
@@ -338,6 +339,7 @@ export default {
             this.$http.get(this.global.serverSrc + '/admin/AdminMethodHandler.ashx?method=pause',{withCredentials: true})
 			.then(res=>{
                 if (res.data == "ok"){
+                    gameOn = false
                     alert("游戏已暂停，请提醒选手")
                 }
 				}, res => {

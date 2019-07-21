@@ -5,6 +5,7 @@ import router from './router/index.js'
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
 import Velocity from 'velocity-animate'
+
 import global_ from './views/common/global'//引用文件
 Vue.prototype.global = global_//挂载到Vue实例上面
 
