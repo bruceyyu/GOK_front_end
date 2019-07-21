@@ -22,8 +22,6 @@ import id_2_Detail from '../views/identity/pages/id_2_Detail'
 import people from '../views/people/pages/people'
 import messageDetail from '../views/message/pages/messageDetail'
 import dead from '../views/dead'
-import adminmain from '../AdminView/adminmain'
-import adminlogin from '../AdminView/adminlogin'
 
 Vue.use(Router)
 
@@ -144,15 +142,4 @@ export default new Router({
         },    
       ]
     },
-
-    {
-      path: '/adminmain',
-      name: 'adminmain',
-      component: adminmain
-    },
-    {
-      path: '/admin',
-      name: 'adminlogin',
-      component: adminlogin
-    }
 )
