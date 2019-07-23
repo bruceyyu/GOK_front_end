@@ -20,7 +20,6 @@
 			</div>
 			<div class="login-inputbtn radius shadow mix-red" @click="login">登录</div>
 			<div class="login-inputbtn radius shadow mix-gray font-gray">忘记帐号/密码</div>
-			<div class="login-inputbtn radius shadow mix-gray font-gray" @click="adminRouter">管理员</div>
 			<div class="login-description">《五王之乱》高清重制版<br/>2019届FE全国商业峰会<br/>专用破冰游戏</div>
 		</div>
 	</div>
