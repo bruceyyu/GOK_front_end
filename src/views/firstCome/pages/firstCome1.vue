@@ -23,7 +23,7 @@ export default {
     },
     computed: {
         cardSrc() {
-			return './static/img_cards/' + this.src + '.jpg'
+			return 'https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img_cards/' + this.src + '.jpg'
         }
     },
     methods: {

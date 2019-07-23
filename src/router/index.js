@@ -45,12 +45,12 @@ export default new Router({
                   component: usermain
                 },
                 {
-                  path: '/shootchoose',
+                  path: 'shootchoose',
                   name: 'shootChoose',
                   component: shootChoose
                 },
                 {
-                  path: '/identitychoose',
+                  path: 'identitychoose',
                   name: 'identityChoose',
                   component: identityChoose
                 },
@@ -87,49 +87,49 @@ export default new Router({
               ]
             },
             {
-              path: 'messagedetail',
+              path: '/messagedetail',
               name: 'messageDetail',
               component: messageDetail
             },
             {
-              path: 'statusdetail',
+              path: '/statusdetail',
               name: 'statusDetail',
               component: statusDetail
             },
             {
-              path: 'dead',
+              path: '/dead',
               name: 'dead',
               component: dead
             }
           ]
         },
         {
-          path: 'login',
+          path: '/login',
           name: 'login',
           component: login
         },
         {
-          path: 'firstCome',
+          path: '/firstCome',
           name: 'firstCome',
           component: firstCome,
           children: [
             {
-              path: 'firstCome1',
+              path: '/firstCome1',
               name: 'firstCome1',
               component: firstCome1,
             },
             {
-              path: 'firstCome2',
+              path: '/firstCome2',
               name: 'firstCome2',
               component: firstCome2,
             },
             {
-              path: 'firstCome3',
+              path: '/firstCome3',
               name: 'firstCome3',
               component: firstCome3,
             },
             {
-              path: 'inclChoose',
+              path: '/inclChoose',
               name: 'inclChoose',
               component: inclChoose,
             }
