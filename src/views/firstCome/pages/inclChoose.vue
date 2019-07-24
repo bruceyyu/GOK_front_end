@@ -7,10 +7,10 @@
 				<div class="user-preference-internal centerlize">	
 					<div class="user-preference-bigtitle">正义</div>
 					<div class="user-preference-description">你一直觉得自己三观够正，这个世界需要平等、秩序、公平、正义，你希望维护这个世界目前的规则，那要比听从某个神棍的伪科学来的更理智。你认为秉持这样的信念，才能帮助这个世界回到出现这件诡异的事情之前的轨道。</div>
-					<div class="user-preference-tips">*阻止五王汇合事件：20分</div>
+					<div class="user-preference-tips">*阻止五王汇合事件：30分</div>
 					<div class="user-preference-tips">*活到最后：20分</div>
 					<div class="user-preference-tips">*特别行动组组长存活：20分</div>
-					<div class="user-preference-tips">*止戈派老大死亡：20分</div>
+					<div class="user-preference-tips">*止戈派老大死亡：10分</div>
 					<div class="user-preference-tips">*兄弟派老大死亡：10分</div>
 					<div class="user-preference-tips">*应许派老大死亡：10分</div>
 					<div class="user-preference-btn radius mix-blue font-white" @click = "goodChoose">选择此倾向</div>
