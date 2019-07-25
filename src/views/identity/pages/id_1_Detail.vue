@@ -57,7 +57,6 @@ export default {
 			id_1_skill: [
 				{name: '', desc: ''}
 			]
-
 		}
 	},
 	computed: {

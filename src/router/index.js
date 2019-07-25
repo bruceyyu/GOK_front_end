@@ -22,12 +22,13 @@ import id_2_Detail from '../views/identity/pages/id_2_Detail'
 import people from '../views/people/pages/people'
 import messageDetail from '../views/message/pages/messageDetail'
 import dead from '../views/dead'
+import result from '../views/result'
 
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
-  // mode: 'hash',
+  // mode: 'history',
+  mode: 'hash',
   routes: [
         {
           path: '/',
@@ -40,7 +41,7 @@ export default new Router({
               component: defaultPage,
               children: [
                 {
-                  path: '/usermain',
+                  path: 'usermain',
                   name: 'usermain',
                   component: usermain
                 },
@@ -107,6 +108,11 @@ export default new Router({
           path: '/login',
           name: 'login',
           component: login
+        },
+        {
+          path: '/result',
+          name: 'result',
+          component: result
         },
         {
           path: '/firstCome',

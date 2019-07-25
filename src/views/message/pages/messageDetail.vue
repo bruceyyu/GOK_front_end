@@ -63,7 +63,7 @@ export default {
 	},
     methods: {
         goBack() {
-            this.$router.push({name:'usermain'})
+            this.$router.back(-1);
 		},
 		readingUnfold(id, is_read) {
 			//如果展开此消息，则清空readingId

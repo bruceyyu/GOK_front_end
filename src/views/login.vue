@@ -19,7 +19,7 @@
 				<input type="password" name="" class="login-inputbar-input" v-model="password">
 			</div>
 			<div class="login-inputbtn radius shadow mix-red" @click="login">登录</div>
-			<div class="login-inputbtn radius shadow mix-gray font-gray">忘记帐号/密码</div>
+			<div class="login-inputbtn radius shadow mix-gray font-gray" @click="openQQ">忘记帐号/密码</div>
 			<div class="login-description">《五王之乱》高清重制版<br/>2019届FE全国商业峰会<br/>专用破冰游戏</div>
 		</div>
 	</div>
@@ -34,12 +34,22 @@ export default {
 	mounted() {
 		this.$http.get(this.global.serverSrc + '/LoginCheck.ashx',{withCredentials: true})
         .then((res)=>{
-				// console.log(res.data)
-				if(res.data == 0){
-					this.$router.push({name: 'login'})		
-				}else{
-					this.$router.push({name: 'usermain'})					
-				}
+                if(res.data == 0)
+                {
+                    this.$router.push({name: 'login'})		
+                }
+                else if (res.data == 'end')
+                {
+                    this.$router.push({name: 'result'})
+                }
+                else if (res.data == 'dead')
+                {
+                    this.$router.push({name: 'dead'})
+                }
+                else
+                {
+                    this.$router.push({name: 'usermain'})
+                }
             })
 		$("#login-bg-pic1").velocity({
 			translateY: "3vw"
@@ -84,6 +94,9 @@ export default {
 		}
 	},
 	methods: {
+        openQQ() {
+			alert("请加五王之乱小助手的qq：1062665066")
+        },
 		login() {
 			if (this.username == "" || this.password == "") {
 				alert ("请输入用户名或密码")
@@ -94,19 +107,30 @@ export default {
 //					console.log(res.data)
 					if(res.data == 'error'){
 						alert ("该用户不存在或密码错误")
-					}else if(res.data == 'illegal'){
+					}
+					else if(res.data == 'illegal')
+					{
 						alert ("请勿输入非法字符") 
-					}else if(res.data == 'old'){
+					}
+					else if(res.data == 'old')
+					{
 						this.$router.push({name:'comeBack'})
-					}else if(res.data == 'new'){
+					}
+					else if(res.data == 'new')
+					{
 						this.$router.push({name:'firstCome'})
+					}
+					else if(res.data == 'end')
+					{
+						this.$router.push({name:'result'})
+					}
+					else if(res.data == 'dead')
+					{
+						this.$router.push({name:'dead'})
 					}
               	})
 			}
 		},
-		adminRouter() {
-			this.$router.push({name: 'adminlogin'})
-		}
 	}
 }
 </script>

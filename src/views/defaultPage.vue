@@ -29,9 +29,9 @@ export default {
         this.getPolling()
 	},
     mounted() {
+        //用于检测用户有无绕过倾向选择阶段
         this.$http.get(this.global.serverSrc + '/DataQuery.ashx?page=usermain',{withCredentials: true})
 			.then(res=>{
-				//用于检测用户有无绕过倾向选择阶段
 				if(res.data == 'inclNone'){
 					this.$router.push({name: 'inclChoose'})
 				}
@@ -61,8 +61,13 @@ export default {
 			.then(res=>{
                     this.status = res.body.status
                     this.msg_count = res.body.msg_count
+                    //如果用户已经死亡
                     if(res.body.is_alive == 0) {
                         this.$router.push({name: 'dead'})
+                    }
+                    //如果游戏已经结束（state=-2）
+                    if(res.body.state == -2) {
+                        this.$router.push({name: 'result'})
                     }
 					self.timer=setTimeout(function(){
 						self.getPolling();

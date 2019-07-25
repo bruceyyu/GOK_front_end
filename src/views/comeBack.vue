@@ -42,12 +42,21 @@ export default {
 		loginCheck() {
 			this.$http.get( this.global.serverSrc + '/logincheck.ashx',{withCredentials: true})
 			.then((res)=>{
-//					console.log(res.data)
-					if(res.data == 0){
-                        this.$router.push({name: 'login'})		
-					}else{
-                        this.name = res.data					
-                    }
+                if(res.data == 0)
+                {
+                    this.$router.push({name: 'login'})		
+                }
+                else if (res.data == 'end')
+                {
+                    this.$router.push({name: 'result'})
+                }
+                else if (res.data == 'dead')
+                {
+                    this.$router.push({name: 'dead'})
+				}
+				else{
+					this.name = res.data
+				}
 			})
 		}
 	},

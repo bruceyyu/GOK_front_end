@@ -3,6 +3,9 @@
     <message
     :msg_count = 0>
     </message>
+    <div class="log-btn bg-white" @click="logOut">
+        <i class="iconfont icon-dengchu"></i>
+    </div>
     <div class="firstlogin-text-box centerlize">
     <div class="firstlogin-text">你</div>
     <div class="firstlogin-text">死了</div>
@@ -23,6 +26,18 @@ import message from './message/components/message'
 export default {
     components: {
         message
+    },
+    methods: {
+		logOut() {
+			this.$http.get(this.global.serverSrc + '/UserLogout.ashx',{withCredentials: true})
+			.then(res=>{
+					if(res.data == 'ok'){
+						this.$router.push({name: 'login'})
+					}
+				}, res => {
+					console.log(res)
+			})
+		}
     }
 }
 </script>
