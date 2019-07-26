@@ -63,7 +63,7 @@ export default {
 	data() {
 		return{
 			iden_2_id: '', bullet_num: '', job_name:  '', incl_name: '', skill_num: '',
-			logOutMsg: '确定要退出登陆吗',
+			logOutMsg: '确定要退出登录吗',
 			msg: '', inform: 'inform'
 		}
 	},
