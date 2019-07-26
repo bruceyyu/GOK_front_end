@@ -9,9 +9,11 @@
 				<job
 					:job_name = "job_name">
 				</job>
+				<!-- 如果没有子弹，会从shoot组件emit一个alert和msg内容，这里监听并调用自己的alert函数 -->
 				<shoot
 					:bullet_num = "bullet_num"
-					:job_name = "job_name">
+					:job_name = "job_name"
+					@alert = 'alert'>
 				</shoot>
 				<skill
 					:skill_num = "skill_num">
@@ -23,7 +25,7 @@
 				<div class="swiper-slide" @click="logOutPopup">
 					<div class="usermain-fun-entrence radius" style="background: linear-gradient(135deg, rgba(240,95,87,0.85), rgba(54,9,64,0.85)), center center ;background-size: cover;">
 						<div class="usermain-fun-entrence-bttom">
-							<div class="usermain-title" style="text-align: center">退出登陆</div>
+							<div class="usermain-title" style="text-align: center">退出登录</div>
 						</div>
 					</div>
 				</div>
@@ -33,9 +35,14 @@
 		</div>
 	</div>
 	<popup
-	:message = logOutMsg
-	@sure = "logOut"
-	ref="popup">
+		:message = logOutMsg
+		@sure = "logOut"
+		ref="popup">
+	</popup>
+	<popup
+		:message = 'msg'
+		:type = 'inform'
+		ref="popupInform">
 	</popup>
 
 </div>
@@ -56,7 +63,8 @@ export default {
 	data() {
 		return{
 			iden_2_id: '', bullet_num: '', job_name:  '', incl_name: '', skill_num: '',
-			logOutMsg: '确定要退出登陆吗'
+			logOutMsg: '确定要退出登陆吗',
+			msg: '', inform: 'inform'
 		}
 	},
 	components: {
@@ -95,6 +103,11 @@ export default {
 				}, res => {
 					console.log(res)
 			})
+		},
+		//从子组件传来的警告信息，使用popup的inform显示
+		alert (msg) {
+			this.msg = msg
+			this.$refs.popupInform.show();
 		}
 	},
 

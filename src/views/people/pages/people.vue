@@ -25,7 +25,10 @@
 	:message = "confirmMsg"
 	@sure = "chosenPersonRouter"
 	ref="popup"></popup>
-
+	<popup
+	:message = "msg"
+	:type= "inform"
+	ref="popupInform"></popup>
 
 </div>
 
@@ -41,7 +44,9 @@ export default {
 			],
 			selectedId: '',
 			selectedName: '',
-			methodName: this.$route.query.method
+			methodName: this.$route.query.method,
+			inform: 'inform',
+			msg: ''
 		}
 	},
 	computed: {
@@ -70,11 +75,12 @@ export default {
 					this.$router.push({name:'usermain'})
 				}
 				else if (res.data == 'no'){
-					alert ("无法执行");
+					this.msg = '当前不允许执行'
+					this.$refs.popupInform.show();
 				}
               	}, res=>{
-				console.log(res);
-				alert("执行失败")
+					this.msg = '执行发生错误，请截图发给工程师'
+					this.$refs.popupInform.show();
               	}
             );
 		}

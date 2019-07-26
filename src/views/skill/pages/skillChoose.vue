@@ -16,17 +16,23 @@
 				:skill_active_on = "skill.active_on"
 				:skill_limit_on = "skill.limit_on"
 				:skill_limit_num = "skill.limit_num"
-				:key = "skill.name">
+				:key = "skill.name"
+				@alert = 'alert'>
 			</skill-card>
 	    </div>
 	    <!-- 如果需要分页器 -->
 	    <div class="swiper-pagination"></div>
 	</div>
-
+	<popup
+		:message = 'msg'
+		:type = 'inform'
+		ref="popupInform">
+	</popup>
     </div>
 </template>
 
 <script>
+import popup from '../../common/popup'
 import skillCard from "../components/skillCard"
 export default {
     data() {
@@ -34,10 +40,13 @@ export default {
 			skill: [
 				{ name: '', active_on: '', limit_num: '', desc: '', limit_on:''},  
 			],
+			inform: 'inform',
+			msg: ''
         }
 	},
 	components: {
-		skillCard
+		skillCard,
+		popup
 	},
 	computed: {
 		skill_total_num() {
@@ -45,8 +54,12 @@ export default {
 		}
 	},
     methods: {
-        goBack: function() {
+        goBack() {
             this.$router.back(-1);
+		},
+		alert(msg) {
+			this.msg = msg
+			this.$refs.popupInform.show();			
 		}
     },
     mounted() {

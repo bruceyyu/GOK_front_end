@@ -30,7 +30,8 @@ export default {
                 this.$router.push({name: 'people', query: {method: this.skill_name}})  
             }
             if (this.skill_active_on && this.skill_limit_num <= 0) {
-                alert ("没有技能点不能发动技能")
+                var msg = '没有技能点，请等待每次整点技能点补充'
+                this.$emit('alert', msg)
             }
         }
     }

@@ -23,6 +23,11 @@
 			<div class="login-description">《五王之乱》高清重制版<br/>2019届FE全国商业峰会<br/>专用破冰游戏</div>
 		</div>
 	</div>
+	<popup
+		:message = "msg"
+		:type = "inform"
+		ref="popupInform">
+	</popup>
 </div>
 </template>
 
@@ -30,6 +35,7 @@
 </style>
 
 <script>
+import popup from './common/popup'
 export default {
 	mounted() {
 		this.$http.get(this.global.serverSrc + '/LoginCheck.ashx',{withCredentials: true})
@@ -72,9 +78,6 @@ export default {
 			duration: 6000,
 			loop: true
 		});
-		if(this.res) {
-			alert(this.res)
-		}
 	},
 	//绑定回车键，回车键登陆
 	created(){
@@ -90,27 +93,34 @@ export default {
 		return {
 			username: '',
 			password: '',
-			res: ''
+			msg: '',
+			inform: 'inform'
 		}
 	},
 	methods: {
         openQQ() {
-			alert("请加五王之乱小助手的qq：1062665066")
+			this.msg = '请加五王之乱小助手的qq：1062665066'
+			this.$refs.popupInform.show();
         },
 		login() {
-			if (this.username == "" || this.password == "") {
-				alert ("请输入用户名或密码")
-			} else {
+			if (this.username == "" || this.password == "") 
+			{
+				this.msg = '请输入账号或者密码'
+				this.$refs.popupInform.show();
+			} 
+			else 
+			{
 				let data = {'username':this.username, 'password':this.password}
 				this.$http.post(this.global.serverSrc + '/UserLogin.ashx', data, {emulateJSON: true,withCredentials: true})
 				.then((res)=>{
-//					console.log(res.data)
 					if(res.data == 'error'){
-						alert ("该用户不存在或密码错误")
+						this.msg = '账号不存在或密码错误'
+						this.$refs.popupInform.show();
 					}
 					else if(res.data == 'illegal')
 					{
-						alert ("请勿输入非法字符") 
+						this.msg = '请勿输入非法字符'
+						this.$refs.popupInform.show();
 					}
 					else if(res.data == 'old')
 					{
@@ -128,9 +138,12 @@ export default {
 					{
 						this.$router.push({name:'dead'})
 					}
-              	})
+				})
 			}
 		},
+	},
+	components: {
+		popup
 	}
 }
 </script>

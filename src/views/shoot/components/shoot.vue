@@ -20,10 +20,11 @@ export default {
                 this.$router.push({name: 'shootChoose'})
             }    
             else {
-                alert("没有子弹不能使用子弹")
+                var msg = '没有子弹不能使用子弹'
+                this.$emit('alert', msg)
             }        
 		}
-	}
+    },
 }
 </script>
 
