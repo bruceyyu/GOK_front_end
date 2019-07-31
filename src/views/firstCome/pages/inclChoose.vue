@@ -48,8 +48,7 @@
 export default {
     methods: {
         goodChoose() {
-            this.$http.post(this.global.serverSrc + '/InclinationHandler.ashx',
-            {inclination: 'good'}, {emulateJSON: true,withCredentials: true})
+            this.$http.get(this.global.serverSrc + '/InclinationHandler.ashx?inclination=good', {withCredentials: true})
             .then(res=>{
                     if (res.data == "ok"){
                         this.$router.push({name: 'usermain'})
@@ -59,8 +58,7 @@ export default {
             })
         },
         middleChoose() {
-            this.$http.post(this.global.serverSrc + '/InclinationHandler.ashx',
-            {inclination: 'middle'}, {emulateJSON: true,withCredentials: true})
+            this.$http.get(this.global.serverSrc + '/InclinationHandler.ashx?inclination=middle', {withCredentials: true})
             .then(res=>{
                     if (res.data == "ok"){
                         this.$router.push({name: 'usermain'})
@@ -70,8 +68,7 @@ export default {
             })
         },
         badChoose() {
-            this.$http.post(this.global.serverSrc + '/InclinationHandler.ashx',
-            {inclination: 'bad'}, {emulateJSON: true,withCredentials: true})
+            this.$http.get(this.global.serverSrc + '/InclinationHandler.ashx?inclination=middle', {withCredentials: true})
             .then(res=>{
                     if (res.data == "ok"){
                         this.$router.push({name: 'usermain'})

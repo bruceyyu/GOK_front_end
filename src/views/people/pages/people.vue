@@ -67,8 +67,7 @@ export default {
 			this.$refs.popup.show();
 		},
 		chosenPersonRouter() {
-			this.$http.post(this.global.serverSrc + '/MethodHandler.ashx',
-				{method:this.methodName,user:this.selectedId}, {emulateJSON: true,withCredentials: true})
+			this.$http.get(this.global.serverSrc + '/MethodHandler.ashx?method=' + this.methodName + '&user=' + this.selectedId, {withCredentials: true})
             .then(res=>{
 				console.log(res)
 				if (res.data.match('ok')) {

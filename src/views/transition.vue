@@ -12,7 +12,7 @@ export default {
         }
     },
     methods: {
-        //请求session里的姓名，判断是否登陆
+        //请求session里的姓名，判断是否登陆，并且保存isLogin变量用于结算跳转判断
         loginCheck() {
             this.$http.get(this.global.serverSrc + '/LoginCheck.ashx',{withCredentials: true})
             .then((res)=>{

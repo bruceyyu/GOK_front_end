@@ -111,7 +111,7 @@ export default {
 			else 
 			{
 				let data = {'username':this.username, 'password':this.password}
-				this.$http.post(this.global.serverSrc + '/UserLogin.ashx', data, {emulateJSON: true,withCredentials: true})
+				this.$http.get(this.global.serverSrc + '/UserLogin.ashx?username=' + this.username + '&password=' + this.password,{withCredentials: true})
 				.then((res)=>{
 					if(res.data == 'error'){
 						this.msg = '账号不存在或密码错误'

@@ -75,8 +75,7 @@ export default {
 			}
 			//如果消息为未读消息，则去后端修改is_read为已读
 			if (is_read == 0){
-				this.$http.post(this.global.serverSrc + '/MessageReadHandler.ashx',
-					{msg_id:id}, {emulateJSON: true,withCredentials: true})
+				this.$http.get(this.global.serverSrc + '/MessageReadHandler.ashx?msg_id=' + id, {withCredentials: true})
 				.then(res=>{
 					this.message = res.body.message
 					}, res => {
