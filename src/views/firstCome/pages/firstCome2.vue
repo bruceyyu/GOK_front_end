@@ -7,7 +7,7 @@
     <div class="firstlogin-text" id="line3">只要他们能够成功汇合</div>
     <div class="firstlogin-text" id="line4">并完成我留下的任务</div>
     <div class="firstlogin-text" id="line5">就将统领这个世界</div>
-    <div class="firstlogin-text" id="line6">游戏，将从凡人阳历X.XX的X:XX开始</div>
+    <div class="firstlogin-text" id="line6">游戏，将从凡人阳历8月5日的10:30开始</div>
     <div class="firstlogin-text-2" id="line7">...点击屏幕继续...</div>
     </div>
 </div>

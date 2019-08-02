@@ -2,7 +2,7 @@
 <div @click="firstCome2Router"
     class="user-firstlogin-page" style="background-image: url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/firstlogin-bg1.jpg);">
     <div class="firstlogin-text-box centerlize">
-        <div class="firstlogin-text" id="line1">201X.X.XX</div>
+        <div class="firstlogin-text" id="line1">2019.8.4</div>
         <div class="firstlogin-text" id="line2">这天晚上</div>
         <div class="firstlogin-text" id="line3">你做了一个奇怪的梦</div>
         <div class="firstlogin-text" id="line4">在这个梦里</div>
@@ -18,7 +18,7 @@
 export default {
     data() {
         return {
-            src: ''
+            src: '方块J'
         }
     },
     computed: {

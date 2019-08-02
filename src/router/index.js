@@ -36,6 +36,11 @@ export default new Router({
           component: transition,
           children: [
             {
+              path: '/comeback',
+              name: 'comeBack',
+              component: comeBack
+            },    
+            {
               path: '/default',
               name: 'defaultPage',
               component: defaultPage,
@@ -141,11 +146,11 @@ export default new Router({
             }
           ]
         },
-        {
-          path: 'comeback',
-          name: 'comeBack',
-          component: comeBack
-        },    
+        // {
+        //   path: '/comeback',
+        //   name: 'comeBack',
+        //   component: comeBack
+        // },    
       ]
     },
 )

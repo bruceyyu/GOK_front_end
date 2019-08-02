@@ -1,8 +1,5 @@
 <template>
 <div class="user-endpage-page">
-    <div class="log-btn bg-white" @click="logOut">
-        <i class="iconfont icon-dengchu"></i>
-    </div>
 	<div class="user-endpage-content centerlize">
 		<div class="score-title">你的得分</div>
 		<div class="score-content font-red">{{score}}</div>
@@ -40,16 +37,6 @@ export default {
                 }
             })
         },
-		logOut() {
-			this.$http.get(this.global.serverSrc + '/UserLogout.ashx',{withCredentials: true})
-			.then(res=>{
-					if(res.data == 'ok'){
-						this.$router.push({name: 'transition'})
-					}
-				}, res => {
-					console.log(res)
-			})
-		}
     },
 
     mounted() {

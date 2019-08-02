@@ -98,7 +98,8 @@ export default {
 			this.$http.get(this.global.serverSrc + '/UserLogout.ashx',{withCredentials: true})
 			.then(res=>{
 					if(res.data == 'ok'){
-						this.$router.push({name: 'login'})
+						this.$router.push({name: 'transition'})
+						location.reload()
 					}
 				}, res => {
 					console.log(res)
@@ -110,7 +111,6 @@ export default {
 			this.$refs.popupInform.show();
 		}
 	},
-
 	mounted() {
 		this.getStaticData();
 		var usermain_swiper = new Swiper ('.swiper-container-usermain', {

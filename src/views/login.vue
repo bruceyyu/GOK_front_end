@@ -113,16 +113,21 @@ export default {
 				let data = {'username':this.username, 'password':this.password}
 				this.$http.get(this.global.serverSrc + '/UserLogin.ashx?username=' + this.username + '&password=' + this.password,{withCredentials: true})
 				.then((res)=>{
-					if(res.data == 'error'){
-						this.msg = '账号不存在或密码错误'
-						this.$refs.popupInform.show();
+				if (res.data == 'error') {
+					this.msg = '账号不存在或密码错误'
+					this.$refs.popupInform.show();
+				}
+				else if (res.data == 'illegal') {
+					this.msg = '请勿输入非法字符'
+					this.$refs.popupInform.show();
+				}
+				else {
+					if (/iPhone|mac|iPod|iPad/i.test(navigator.userAgent)) {
+					if (!window.parent) window.location.href = this.global.serverSrc + '/weixinLogin.html?username=' + encodeURI(this.username) + '&password=' + encodeURI(this.password);
+					else window.parent.location.href = this.global.serverSrc + '/weixinLogin.html?username=' + encodeURI(this.username) + '&password=' + encodeURI(this.password);
 					}
-					else if(res.data == 'illegal')
-					{
-						this.msg = '请勿输入非法字符'
-						this.$refs.popupInform.show();
-					}
-					else if(res.data == 'old')
+					else {
+					if (res.data == 'old')
 					{
 						this.$router.push({name:'comeBack'})
 					}
@@ -138,6 +143,8 @@ export default {
 					{
 						this.$router.push({name:'dead'})
 					}
+					}
+				}
 				})
 			}
 		},

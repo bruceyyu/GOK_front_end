@@ -8,7 +8,8 @@ export default {
     data() {
         return{
             state: '',
-            isLogin: ''
+            isLogin: '',
+            pressed: 0
         }
     },
     methods: {
@@ -32,11 +33,19 @@ export default {
                     this.$router.push({name: 'dead'})
                     this.isLogin = 1
                 }
-                else
-                {
-                    this.$router.push({name: 'usermain'})
-                    this.isLogin = 1	
+                else if (res.data == 'new'){
+                    this.$router.push({name: 'firstCome'})
+                    this.isLogin = 1
                 }
+                else 
+                {
+                    this.$router.push({name: 'comeBack'})
+                    this.isLogin = 1
+                }
+                
+                    // this.$router.push({name: 'usermain'})
+
+                
             })
         },
 
@@ -59,7 +68,7 @@ export default {
     },
     beforeDestroy() {
         //页面销毁前 结束轮询
-         if(this.timer)clearTimeout(this.timer);
+        if(this.timer)clearTimeout(this.timer);
     },
     mounted() {
         this.loginCheck()   

@@ -21,7 +21,7 @@
 				<div class="user-preference-internal centerlize">	
 					<div class="user-preference-bigtitle">中立</div>
 					<div class="user-preference-description">很遗憾，你不是王。作为勤勤恳恳工作、安安稳稳生活了小半辈子的你，挠破脑袋也没能想明白为何会出现此等反科学的事情。但是互联网上大家纷纷扰扰的讨论，又不得不让你面对现实——每一个人都梦见了上帝，记忆非常清楚，而且上帝在每一个人梦中说的话都一模一样。但话又说回来，被谁统治又有什么区别呢？你觉得还是自己活下来才是真正重要的——你的家人都需要你。这个世界总会平静下来的，何不就此捞一笔呢？</div>
-					<div class="user-preference-tips">*活到最后：30分</div>
+					<div class="user-preference-tips">*活到最后：50分</div>
 					<div class="user-preference-tips">*结束时每拥有1颗子弹加10分，上限50分</div>
 					<div class="user-preference-btn radius mix-yellow font-white" @click = "middleChoose">选择此倾向</div>
 					<div class="user-preference-ps">*选择倾向后不可更改</div>
