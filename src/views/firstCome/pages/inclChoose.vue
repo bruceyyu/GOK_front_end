@@ -68,7 +68,7 @@ export default {
             })
         },
         badChoose() {
-            this.$http.get(this.global.serverSrc + '/InclinationHandler.ashx?inclination=middle', {withCredentials: true})
+            this.$http.get(this.global.serverSrc + '/InclinationHandler.ashx?inclination=bad', {withCredentials: true})
             .then(res=>{
                     if (res.data == "ok"){
                         this.$router.push({name: 'usermain'})

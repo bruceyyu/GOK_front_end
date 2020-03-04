@@ -20,7 +20,7 @@
 			</div>
 			<div class="login-inputbtn radius shadow mix-red" @click="login">登录</div>
 			<div class="login-inputbtn radius shadow mix-gray font-gray" @click="openQQ">忘记帐号/密码</div>
-			<div class="login-description">《五王之乱》高清重制版<br/>2019届FE全国商业峰会<br/>专用破冰游戏</div>
+			<div class="login-description">《五王之乱》高清重制版<br/>2019届FE全国商业峰会<br/>专用破冰游戏<br/><b>设计:孙毅Eason  <b>开发:虞越Bruce</b></div>
 		</div>
 	</div>
 	<popup

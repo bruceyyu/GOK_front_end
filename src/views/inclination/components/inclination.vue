@@ -4,7 +4,7 @@
         <div class="usermain-fun-entrence radius" style="background: linear-gradient(135deg, rgba(253,110,106,0.8), rgba(255,198,0,0.8)),url(https://gok-picture.oss-cn-beijing.aliyuncs.com/gok/img/usermain-bg4.jpg) center center ;background-size: cover;">
             <div class="usermain-icon" style=" margin-top: 2vw;"><i class="iconfont icon-balance-scale" style="font-size: 16vw;"></i></div>
             <div class="usermain-fun-entrence-bttom">
-                <div class="usermain-title">倾向</div>
+                <div class="usermain-title">倾向(目标)</div>
                 <div class="usermain-subtitle">{{inclination}}</div>
             </div>
         </div>
